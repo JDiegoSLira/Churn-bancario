@@ -2,15 +2,15 @@
 
 <img src="imagens/Churn.png">
 
-Este projeto apresenta uma solução de aprendizado de máquina para previsão de cancelamento de contrato bancário, utilizando dados demográficos, financeiros e comportamentais para identificar clientes com maior probabilidade de cancelar seus contrato. Durante a análise exploratória dos dados (EDA), foram identificados padrões importantes relacionados ao churn, como maior incidência entre clientes inativos, com poucos produtos bancários e faixas etárias mais elevadas.
+Este projeto apresenta uma solução de aprendizado de máquina para previsão de cancelamento de contrato bancário, utilizando dados demográficos, financeiros e comportamentais para identificar clientes com maior probabilidade de cancelar seus contratos. Durante a análise exploratória dos dados (EDA), foram identificados padrões importantes relacionados ao churn, como maior incidência entre clientes inativos, com poucos produtos bancários e faixas etárias mais elevadas.
 
 Foram avaliados diversos algoritmos de machine learning, incluindo Regressão Logística, Naive Bayes, KNN, Árvores de Decisão, Random Forest, Gradient Boosting, AdaBoost, XGBoost e LightGBM. Os melhores resultados foram obtidos pelos modelos ensemble baseados em árvores, com destaque para o Random Forest, que alcançou aproximadamente 82,8% de acurácia e apresentou o melhor equilíbrio entre as métricas de avaliação.
 
-O projeto foi desenvolvido seguindo uma abordagem de ponta a ponta, desde a análise exploratória até o treinamento e avaliação dos modelos. A implementação foi organizada de forma modular, com pipelines para treinamento e previsão, além da utilização de boas práticas como ambientes virtuais, tratamento de exceções, geração de logs e documentação do código, ambas as etapas foram desenvolvidas em Jupyter Notebook.
+O projeto foi desenvolvido seguindo uma abordagem de ponta a ponta, desde a análise exploratória até o treinamento e avaliação dos modelos. A implementação foi organizada de forma modular, com pipelines para treinamento e previsão, além da utilização de boas práticas como ambientes virtuais, tratamento de exceções, geração de logs e documentação do código. Todo o desenvolvimento do projeto, incluindo a análise exploratória e a modelagem preditiva, foi realizado no Jupyter Notebook.
 
 # Tecnologias utilizadas
 
-A ferramentas utilizadas neste projeto foram Python em conjunto com as bibliotecas e funções Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, Imbalanced-Learn, XGBoost, LightGBM e Yellowbrick, Jupyter Notebook para análise exploratória e desenvolvimento dos modelos, algoritmos de classificação e clustering de aprendizado de máquina, técnicas estatísticas para análise dos dados, Git e GitHub para controle de versão, além do VS Code para desenvolvimento do projeto.
+As ferramentas utilizadas neste projeto foram Python em conjunto com as bibliotecas e funções Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, Imbalanced-Learn, XGBoost, LightGBM e Yellowbrick, Jupyter Notebook para análise exploratória e desenvolvimento dos modelos, algoritmos de classificação e clustering de aprendizado de máquina, técnicas estatísticas para análise dos dados, Git e GitHub para controle de versão, além do VS Code para desenvolvimento do projeto.
 
 
 # Problema de Negócio
@@ -21,7 +21,7 @@ A perda de clientes impacta diretamente indicadores importantes do negócio:
 
 - O Custo de Aquisição de Clientes representa o valor investido pela instituição para conquistar novos clientes, incluindo despesas com marketing, vendas e campanhas de captação. Quando um cliente cancela seu contrato, parte desse investimento pode não gerar o retorno esperado, aumentando os custos operacionais da empresa.
 
-- Já o Valor Vitalício do Cliente corresponde ao valor financeiro que um cliente pode gerar para o banco ao longo de todo o seu relacionamento com a instituição. Clientes com maior tempo de permanência tendem a consumir mais produtos e serviços financeiros, como cartões de crédito, empréstimos, seguros e investimentos. Dessa forma, reduzir a evasão de clientes contribui diretamente para o aumento valor vitalício do cliente. 
+- Já o Valor Vitalício do Cliente corresponde ao valor financeiro que um cliente pode gerar para o banco ao longo de todo o seu relacionamento com a instituição. Clientes com maior tempo de permanência tendem a consumir mais produtos e serviços financeiros, como cartões de crédito, empréstimos, seguros e investimentos. Dessa forma, reduzir a evasão de clientes contribui diretamente para o aumento do valor vitalício do cliente. 
 
 - Outro indicador fundamental é a Taxa de Cancelamento, que mede a proporção de clientes que encerraram seu vínculo com o banco em determinado período. Taxas elevadas dessa métrica podem indicar problemas relacionados à satisfação dos clientes, qualidade dos serviços, concorrência ou estratégias de relacionamento. 
 
@@ -75,7 +75,7 @@ Para o desenvolvimento deste projeto, será adotado o seguinte fluxo de etapas:
 **Card Type:** tipo de cartão que o cliente possui. Variável categórica ordinal. 
 **Points Earned:** pontos acumulados pelo cliente pelo uso do cartão de crédito. Variável quantitativa discreta.
 
-# Principas descobertas do projeto
+# Principais descobertas do projeto
   
 - O gráfico demonstra que a maioria dos clientes permaneceu no banco, representando aproximadamente 79,62% da base de dados, enquanto cerca de 20,38% realizaram o cancelamento dos serviços bancários. Esses resultados evidenciam um desbalanceamento entre as classes, característica comum em problemas de churn e que deve ser considerada durante o treinamento dos modelos de machine learning.
 
@@ -138,11 +138,11 @@ Nesta etapa, o foco foi preparar os dados e construir um pipeline robusto para p
 | K-Means             | 0.712    | -         | -      | -        |
 | Naive Bayes         | 0.725    | 0.400     | 0.680  | 0.500    |
 
-Após o treino e avaliação de diversos algoritmos, os modelos Ensemble baseados em múltiplas árvores de decisão demonstraram ser os mais adequados para captar os padrões complexos e não-lineares de churn dos clientes. O grande destaque do projeto foi o Random Forest, eleito o melhor modelo global por alcançar a maior Acurácia 82,86%, garantindo uma elevada confiabilidade ao sinalizar potenciais cancelamentos com uma baixa taxa de falsos positivos. Como alternativas robustas, o Gradient Boosting obteve o maior F1-Score da análise, oferecendo um excelente equilíbrio geral, enquanto a AdaBoost isolada registou o maior Recall, sendo a opção ideal caso a prioridade de negócio fosse detetar absolutamente todas as evasões, mesmo à custa de mais falsos alarmes. Em contrapartida, algoritmos lineares e probabilísticos, como a Regressão Logística e o Naive Bayes, apresentaram os piores desempenhos. Isto confirma de forma clara que o comportamento que leva ao churn bancário é estritamente multifatorial e exige o poder matemático avançado de métodos como Bagging e Boosting para ser previsto com eficácia.
+Após o treino e avaliação de diversos algoritmos, os modelos Ensemble baseados em múltiplas árvores de decisão demonstraram ser os mais adequados para captar os padrões complexos e não-lineares de churn dos clientes. O grande destaque do projeto foi o Random Forest, eleito o melhor modelo global por alcançar a maior Acurácia 82,86%, garantindo uma elevada confiabilidade ao sinalizar potenciais cancelamentos com uma baixa taxa de falsos positivos. Como alternativas robustas, o Gradient Boosting obteve o maior F1-Score da análise, oferecendo um excelente equilíbrio geral, enquanto a AdaBoost isolada registou o maior Recall, sendo a opção ideal caso a prioridade de negócio fosse detectar absolutamente todas as evasões, mesmo à custa de mais falsos alarmes. Em contrapartida, algoritmos lineares e probabilísticos, como a Regressão Logística e o Naive Bayes, apresentaram os piores desempenhos. Isso confirma de forma clara que o comportamento que leva ao churn bancário é estritamente multifatorial e exige o poder matemático avançado de métodos como Bagging e Boosting para ser previsto com eficácia.
 
 <img src="imagens/matriz_de_confusao.png"> 
 
-- Eficácia na retenção (Verdadeiros Positivos): O modelo deteta com grande eficácia os clientes prestes a cancelar, permitindo ao banco atuar no momento corrento para não perder o cliente.
+- Eficácia na retenção (Verdadeiros Positivos): O modelo deteta com grande eficácia os clientes prestes a cancelar, permitindo ao banco atuar no momento correto para não perder o cliente.
 
 - Poupança de recursos (Verdadeiros Negativos): A elevada capacidade de identificar os clientes fiéis garante que não se desperdiçam recursos de marketing com quem não tenciona sair.
 
