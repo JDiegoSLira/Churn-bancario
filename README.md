@@ -1,6 +1,6 @@
 # Previsão de Churn Bancário com Machine Learning
 
-<img src="imagens/churn.png">
+<img src="imagens/Churn.png">
 
 Este projeto apresenta uma solução de aprendizado de máquina para previsão de cancelamento de contrato bancário, utilizando dados demográficos, financeiros e comportamentais para identificar clientes com maior probabilidade de cancelar seus contrato. Durante a análise exploratória dos dados (EDA), foram identificados padrões importantes relacionados ao churn, como maior incidência entre clientes inativos, com poucos produtos bancários e faixas etárias mais elevadas.
 
