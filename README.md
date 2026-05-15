@@ -91,7 +91,7 @@ Para o desenvolvimento deste projeto, será adotado o seguinte fluxo de etapas:
 
 - O cruzamento de dados revela que clientes mais jovens 30 a 40 anos apresentam maior taxa de retenção no banco. Em contrapartida, o volume de cancelamentos concentra-se expressivamente em uma faixa etária mais madura, com um forte pico de evasão entre os 40 e 50 anos de idade.
 
-<img src="imagens/ggrafico_bivariada_age.png"> 
+<img src="imagens/grafico_bivariada_age.png"> 
 
 - A análise do grupo evadido revela que a inatividade é um forte sintoma de cancelamento equivalente a 62,9% dos clientes que cancelaram não eram membros ativos. Isso demonstra que a falta de engajamento prévio com os serviços do banco atua como um claro estágio preparatório para a saída definitiva.
 
